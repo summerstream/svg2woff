@@ -12,7 +12,7 @@ font.setGlyph('家',{
 })
 
 //使用unicode
-font.setSvg('&#xe601;',mail)
+font.setSvg('arrow-right',mail)
 
 font.output({
   path:'./output/iconfont'
