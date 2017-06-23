@@ -2,3 +2,5 @@
 /doc/
 *.log
 *.swp
+/input/
+/output/
