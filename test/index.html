@@ -14,7 +14,7 @@
             var ele =document.createElement('div');
             ele.className+='icon';
             var char = eval('"\\u'+(57345+i).toString(16)+'"');
-            var content =document.createTextNode(char);
+            var content =document.createTextNode(char +'\\u'+(57345+i).toString(16));
             ele.appendChild(content);
             iconList.append(ele);
         }
