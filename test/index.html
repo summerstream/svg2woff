@@ -7,7 +7,17 @@
         <link href="css/style.css" rel="stylesheet">
     </head>
     <body>
-    <div class="icon family"></div>
-    <div class="icon">e0001</div>
+    <div class="icon-list"></div>
+    <script>
+        var iconList = document.querySelector('.icon-list');
+        for(var i=0;i<10;i++){
+            var ele =document.createElement('div');
+            ele.className+='icon';
+            var char = eval('"\\u'+(57345+i).toString(16)+'"');
+            var content =document.createTextNode(char);
+            ele.appendChild(content);
+            iconList.append(ele);
+        }
+    </script>
     </body>
 </html>

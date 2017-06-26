@@ -15,5 +15,5 @@
   font-style: normal;
 }
 .icon.family::before{
-  content: 'family'
+  content: '\e001'
 }

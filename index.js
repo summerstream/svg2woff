@@ -16,7 +16,8 @@ fs.readdir('input',function(err,files){
     // })
     //E000-F8FF
     var code = 57345 + index;
-    font.setSvg(code.toString(16),file)
+    // font.setSvg(code.toString(16),file)
+    font.setSvg('&#x'+code.toString(16)+';',file);
   });
 
   font.output({
